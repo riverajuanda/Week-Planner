@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador Semanal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PROGRAMADOR DE HORARIOS</h1>
+        <form id="form-actividad">
+            <select id="input-dia" required>
+                <option value="0">-- Seleccione día --</option>  <!-- Selección por defecto -->
+                <option value="1">Lunes</option>
+                <option value="2">Martes</option>
+                <option value="3">Miércoles</option>
+                <option value="4">Jueves</option>
+                <option value="5">Viernes</option>
+                <option value="6">Sábado</option>
+                <option value="7">Domingo</option>
+            </select>
+            <input type="time" id="input-hora-inicio" required> <!-- Hora de inicio -->
+            <input type="number" id="input-duracion" placeholder="Duración (en horas)" min="1" max="8" required> <!-- Duración -->
+            <input type="text" id="input-descripcion" placeholder="Descripción" required>
+            <button class="boton" type="submit">Agregar Actividad</button>
+        </form>
+    </header>
+    <main>
+         
+        <div class="programador">
+            <nav class="columna">
+                <p>3063934</p>
+                <p>TGO ANALISIS Y DESARROLLO DE SOFTWARE</p>
+                <P>GESTOR: GERMÁN ESTRADA</P>
+                <P>______________________</P>
+                <P>TRIMESTRE 2</P>
+                <P>_______________________</P>
+                <P>PORTAFOLIO N° 126</P>
+                <P>Fecha Inicio Etapa Lectiva: 15-10-2024</P>
+                <p>Fecha Fin Etapa Lectiva: 14-07-2026</p>
+                <p>Fecha Inicio Etapa Productiva: 15-10-2026</p>
+                <p>Fecha Fin Etapa Productiva:14-01-2027 </p>
+                <p></p>
+                <p></p>
+                <p>______________________</p>
+                <p>N° de aprendices activos en formación:</p>
+            </nav>
+            <div class="horas">                 
+                                             
+                <div class="hora">7:00:00 a.m.</div>
+                <div class="hora">7:30:00 a.m.</div>
+                <div class="hora">8:00:00 a.m.</div>
+                <div class="hora">8:30:00 a.m.</div>
+                <div class="hora">9:00:00 a.m.</div>
+                <div id="descanso" >9:30:00 a.m.</div>
+                <div id="descanso" class="hora">10:00:00 a.m.</div>
+                <div class="hora">10:30:00 a.m.</div>
+                <div class="hora">11:00:00 a.m.</div>
+                <div class="hora">11:30:00 a.m.</div>
+                <div class="hora">12:00:00 p.m.</div>
+                <div class="hora">12:30:00 p.m.</div>
+                <div class="hora">1:00:00 p.m.</div> <! -- 13 -->
+                <div class="hora">1:30:00 p.m.</div>
+                <div class="hora">2:00:00 p.m.</div>
+                <div class="hora">2:30:00 p.m.</div>
+                <div class="hora">3:00:00 p.m.</div>
+                <div id="descanso" class="hora" >3:30:00 p.m.</div>
+                <div id="descanso" class="hora" >4:00:00 p.m.</div>
+                <div class="hora">4:30:00 p.m.</div>
+                <div class="hora">5:00:00 p.m.</div>
+                <div class="hora">5:30:00 p.m.</div>
+                <div class="hora">6:00:00 p.m.</div>
+                <div class="hora">6:30:00 p.m.</div>
+                <div class="hora">7:00:00 p.m.</div>
+                <div class="hora">7:30:00 p.m.</div>
+                <div class="hora">8:00:00 p.m.</div>
+                <div class="hora">8:30:00 p.m.</div>
+                <div class="hora">9:00:00 p.m.</div>
+                <div class="hora">9:30:00 p.m.</div>
+                <div class="hora">10:00:00 p.m.</div>
+            </div>
+            <div class="dias">
+                <div class="dia">Hora</div> 
+                <div class="dia">Lunes</div>
+                <div class="dia">Martes</div>
+                <div class="dia">Miércoles</div>
+                <div class="dia">Jueves</div>
+                <div class="dia">Viernes</div>
+                <div class="dia">Sábado</div>
+            </div>
+            <div class="actividades">
+                 <div class="actividad" style="grid-column: 2; grid-row: 13 / span 10; background-color: rgb(247, 93, 170);">
+                    <p>3063934</p>
+                    <p>TGO ANALISIS Y DESARROLLO DE SOFTWARE</p>
+                    <p>Competencia: ANÁLISIS DE LA ESPECIFICACIÓN DE REQUISITOS DEL SOFTWARE</p>
+                    <p>INSTRUCTOR : CARLOS LOAIZA</p>
+                    <p>Amb: SISTEMAS 3</p>
+                    <button class="eliminar-actividad">x</button>                   
+                 </div>   
+                 <div class="actividad" style="grid-column: 3; grid-row: 13 / span 10; background-color: rgb(247, 93, 170);">
+                    <p>3063934</p>
+                    <p>TGO ANALISIS Y DESARROLLO DE SOFTWARE</p>
+                    <p>Competencia: ANÁLISIS DE LA ESPECIFICACIÓN DE REQUISITOS DEL SOFTWARE</p>
+                    <p>INSTRUCTOR : Oscar Aristizabal</p>
+                    <p>Amb: SISTEMAS 3</p>
+                    <button class="eliminar-actividad">x</button>                       
+                 </div> 
+                 <div class="actividad" style="grid-column: 4; grid-row: 3/ span 8; background-color: rgb(247, 93, 170);">
+                    <p>3063934</p>
+                    <p>TGO ANALISIS Y DESARROLLO DE SOFTWARE</p>
+                    <p>Competencia: Investigación Desarrollo Innovación</p>
+                    <p>INSTRUCTOR : Adriana Rodriguez</p>
+                    <p>Amb: Electricidad 3</p>
+                    <button class="eliminar-actividad">x</button>                       
+                 </div>
+                 <div class="actividad" style="grid-column: 4; grid-row: 13/ span 5; background-color: rgb(247, 93, 170);">
+                    <p>3063934</p>
+                    <p>TGO ANALISIS Y DESARROLLO DE SOFTWARE</p>
+                    <p>Competencia: Investigación Desarrollo Innovación</p>
+                    <p>INSTRUCTOR : Adriana Rodriguez</p>
+                    <p>Amb: Electricidad 3</p>
+                    <button class="eliminar-actividad">x</button>                       
+                 </div>
+                 <div class="actividad" style="grid-column: 4; grid-row: 19/ span 6; background-color: rgb(247, 93, 170);">
+                    <p>3063934</p>
+                    <p>TGO ANALISIS Y DESARROLLO DE SOFTWARE</p>
+                    <p>Competencia: Investigación Desarrollo Innovación</p>
+                    <p>INSTRUCTOR : Adriana Rodriguez</p>
+                    <p>Amb: Electricidad 3</p>
+                    <button class="eliminar-actividad">x</button>                       
+                 </div>
+                 <div class="actividad" style="grid-column: 5; grid-row: 1/ span 10; background-color: rgb(247, 93, 170);">
+                    <p>3063934</p>
+                    <p>TGO ANALISIS Y DESARROLLO DE SOFTWARE</p>
+                    <p>Competencia: Investigación Desarrollo Innovación</p>             
+                    <p>INSTRUCTOR : Adriana Rodriguez</p>
+                    <p>Amb: Electricidad 3</p>
+                    <button class="eliminar-actividad">x</button>                       
+                 </div>
+                 <div class="actividad" style="grid-column: 5; grid-row: 13/ span 10; background-color: rgb(247, 93, 170);">
+                    <p>3063934</p>
+                    <p>TGO ANALISIS Y DESARROLLO DE SOFTWARE</p>
+                    <p>Competencia: Investigación Desarrollo Innovación</p>             
+                    <p>INSTRUCTOR : Adriana Rodriguez</p>
+                    <p>Amb: Electricidad 3</p>
+                    <button class="eliminar-actividad">x</button>                       
+                 </div>
+                 <div class="actividad" style="grid-column: 6; grid-row: 13/ span 10; background-color: rgb(247, 93, 170);">
+                    <p>3063934</p>
+                    <p>TGO ANALISIS Y DESARROLLO DE SOFTWARE</p>
+                    <p>Competencia: Investigación Desarrollo Innovación</p>             
+                    <p>INSTRUCTOR : Adriana Rodriguez</p>
+                    <p>Amb: Electricidad 3</p>
+                    <button class="eliminar-actividad">x</button>                       
+                 </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script> 
+</body>
+</html>
